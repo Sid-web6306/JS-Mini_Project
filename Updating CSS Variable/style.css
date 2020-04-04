@@ -1,0 +1,30 @@
+:root{
+    --basecolor:#ffc600;
+    --spacing: 10px;
+    --blur: 10px;
+}
+img{
+    margin-top: 40px;
+    padding: var(--spacing);
+    background: var(--basecolor);
+    filter: blur(var(--blur));
+}
+
+.h1{
+    color:var(--basecolor);
+}
+
+
+
+
+
+body{
+    text-align: center;
+    background-color: #193549;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    font-size: 30px;
+}
+input{
+    width: 100px;
+}
