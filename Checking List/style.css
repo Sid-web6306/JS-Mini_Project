@@ -1,0 +1,27 @@
+html{
+    background-color: lightgreen;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.inbox{
+    width: 300px;
+    height: auto;
+    margin: 30px auto;
+    border: 1px solid black;
+    box-shadow: 5px 5px grey;
+}
+.items{
+    width: 80%;
+    display: inline-flex;
+}
+p{
+    margin-top:0;
+}
+.linethrough{
+    text-decoration: line-through;
+}
+input:checked + p {
+      background:lightcoral;
+      text-decoration: line-through;
+}
