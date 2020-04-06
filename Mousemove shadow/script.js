@@ -13,7 +13,7 @@ function shadow(e){
 
     const xwalk= Math.round((x / width * walk)-(walk / 2));
     const ywalk= Math.round((y / height * walk)-(walk / 2));
-    console.log(xwalk,ywalk);
+    // console.log(xwalk,ywalk);
 
     text.style.textShadow=`${xwalk}px ${ywalk}px 0 rgba(255,0,0,0.7)`;
     // console.log(x,y);
