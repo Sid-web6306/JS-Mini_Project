@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reference vs Copy</title>
+</head>
+<body>
+    <p> Go To Console</p>
+    <script>
+        ///numbers
+        let age=100;
+        let age2=age;
+        console.log(age,age2);
+        age=200;
+        console.log(age,age2);
+
+        ///strings
+        let name="siddhant";
+        let name2=name;
+        console.log(name,name2);
+        name="surbhi";
+        console.log(name,name2);
+
+        ///array
+        const coders =['wes','andre','harshit','manisha','siddhant'];
+        const teams=coders;
+
+        console.log(coders,teams);
+        // teams[3]="fredy";
+        console.log(coders,teams);
+        const team2=coders.slice();
+        const team3=[].concat(coders);
+        console.log(team2,team3);
+        const team4=[...coders];//ES6=Notation for coping Array
+        team4[4]="heheh hehhe";
+        console.log(team4);
+        const team5 = Array.from(coders);
+        team5[2]="Ravi";
+        console.log(team5);
+
+
+
+        //////objects
+
+        const person={
+            name:"Siddhant Jain",
+            age:22
+        };
+        const captain=person;
+        // captain.age=90;
+        console.log(captain);///Data changed for both objects
+        const warrior=Object.assign({},person,{name:"andre naegoi"},{age:33});///Goes one level Deep.
+        console.log('Warrior',warrior);
+        ///ES6->Spread function
+        const superhero={...person};
+        console.log('Superhero',superhero);
+
+        const Roman={
+            name:"artimes",
+            age:21,
+            social:{
+                twitter:'@artimes123',
+                facebook:'artimes.warrior'
+            }
+        };
+        console.log('Roman',Roman);
+
+        const dev=JSON.parse(JSON.stringify(Roman));
+        console.log(dev);
+
+
+
+
+
+
+    </script>
+</body>
+</html>
