@@ -1,0 +1,17 @@
+body{
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.text-container{
+    min-height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+h1{
+    text-shadow: 10px 10px 0 red;
+    font-size: 100px;
+    /* background-color: rosybrown; */
+    /* transform: rotate(-10deg); */
+}
