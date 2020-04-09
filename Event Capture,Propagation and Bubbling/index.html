@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events CPB</title>
+    <style>
+        html{
+            box-sizing: border-box;
+        }
+        *, *:before, *:after {
+             box-sizing: inherit;
+        }
+        .one{
+            background-color: red;
+            padding: 100px;
+        }
+        .two{
+            background-color: green;
+            padding:100px
+        }
+        .three{
+            background-color: blue;
+            padding:100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="one">
+        <div class="two">
+            <div class="three">
+            </div>
+        </div>
+    </div>
+    <button class="btn">Click Me</button>
+    <script>
+        const divs=document.querySelectorAll('div');
+
+        function fun(e){
+            // e.stopPropagation();
+            console.log(this.classList.value);
+        }
+        divs.forEach(div => div.addEventListener('click',fun,{capture:true,once:true}));
+
+
+        const btn=document.querySelector(".btn");
+        btn.addEventListener('click',fun,{once:true);
+    </script>
+
+
+
+
+</body>
+</html>
