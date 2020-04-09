@@ -32,9 +32,7 @@ function checkSlider(e){
         }
     });
 }
-//////////Important Use Of [debounce function] for executing function.\\\\\\
-
-
+//////////Important Use Of [debounce function] for executing function.\\\\
 
 
 window.addEventListener('scroll',debounce(checkSlider));
