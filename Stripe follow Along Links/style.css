@@ -64,6 +64,11 @@ html {
     will-change: opacity;
     display: none;
   }
+  .bio>img{
+      height: 100%;
+      width: 120px;
+      display:inherit;
+  }
 
   .trigger-enter .dropdown {
     display: block;
