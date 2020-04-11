@@ -40,7 +40,7 @@ function displayEndTime(timestamp){
 
 function startTimer(){
     const seconds = parseInt(this.dataset.time);
-    console.log(seconds);
+    // console.log(seconds);
     timer(seconds);
 }
 
